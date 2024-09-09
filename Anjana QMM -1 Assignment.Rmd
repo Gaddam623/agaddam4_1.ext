@@ -1,0 +1,98 @@
+---
+title: "QMM-Assignment-1 Anjana"
+author: "Anjana Gaddam"
+date: "2024-09-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**LP Model**
+
+```{r}
+df<-matrix(c(3,1000,0.75,'$32',2,1200,0.67,'$24'),ncol=4,byrow=TRUE)
+# Giving the names of the columns and rows
+colnames(df)<-c('Materials','Sales','Labor','Profit')
+rownames(df)<-c('Collegiate','Mini')
+table=as.table(df)
+table
+```
+Lets  Assume
+The materials at the college are = $$C_q$$.
+Materials for the Mini are = $$M_q$$.
+Sales at the Collegiate are = $$C_w$$.
+Sales of the Mini are = $$M_w$$.
+The labor of the Collegiate is equal to $$C_e$$.
+The labor of the mini is equal to $$M_e$$.
+The Collegiate is making = $$C_f$$ in profit.
+The Mini is making = $$M_f$$ in profit.
+
+(a) The following are the decision-making factors for collegiate and mini:
+$$C_q,M_a,C_w,M_l,C_e \hspace{.3cm} and \hspace{.3cm}M_e  $$
+(b) Objective function of collegiate and mini are as follows:
+$$ Max Z = 32C_f+24M_f  $$
+(c) The following are the limitations of collegiate and mini:
+Material Constraint: $$3C_q+2M_a \le 5000 $$
+Labor Constraint: $$(35)*(40) = 1400  $$
+Sales constraints: $$\hspace{0.5cm} C_w \le  1000  $$
+Sales constraints: $$\hspace{0.5cm} M_l \le  1200  $$
+
+
+
+(d) Collegiate and mini are fully expressed mathematically as follows:
+$$0.75C_e+0.667M_e \le 1400   $$
+
+
+
+
+
+
+Question 2 :
+
+**LP Model**
+
+
+Let's Assume:
+
+
+Pl_1 = $$A_1$$
+Pl_2 = $$A_2$$
+Pl_3 = $$A_3$$
+Larger Sized Plant_1 = $$A_l1$$
+Medium Sized Plant_1 = $$A_m1$$
+Small Sized Plant_1 = $$A_s1$$
+Larger Sized Plant_2 = $$A_l2$$
+Medium Sized Plant_2 = $$A_m2$$
+Small Sized Plant_2 = $$A_s2$$
+Larger Sized Plant_3 = $$A_l3$$
+Medium Sized Plant_3 = $$A_m3$$ 
+Small Sized Plant_3 = $$A_s3$$ 
+
+
+a). The following are the decision variables:
+$$ T_l,A_2,A_3,A_l1,A_m1,A_s1,A_l2,A_m2,A_s2,A_l3,A_m3,A_s3 $$
+b). The objective function is:
+$$ Max Z=420(A_l1+A_m1+A_s1),360(A_l2+A_m2+A_s2),300(A_l3+A_m3+A_s3) $$
+c). Constraints:
+
+Capcity_Constrnt_of_plant_1 : $$A_l1+A_m1+A_s1 \le 750  $$
+Capcity_Constrnt_of_plant_2 : $$A_l2+A_m2+A_s2 \le 900 $$
+Capcity_Constrnt_of_plant_3 : $$A_l3+T+m3+T+s3 \le 450  $$
+
+Storge_Constrnt_of_plant_1 :  $$20(A_l1+A_m1+A_s1) \le 13000 $$
+Storge_Constrnt_of_plant_2 :  $$15(A_l2+A_m2+A_s2) \le 12000 $$
+Storge_Constrnt_of_plant_3 :  $$12(A_l3+A_m3+A_s3) \le 5000 $$
+
+Sale_Constrnt_of_plant_1 : $$A_l1+A_m1+A_s1 \le 900 $$
+Sale_Constrnt_of_plant_2 : $$A_l2+A_m2+A_s2 \le 1200 $$
+Sale_Constrnt_of_plant_3 : $$A_l3+A_m3+A_s3 \le 750 $$
+
+d). The excess capacity of plants with the same percentage:
+
+
+Al_1: $$(A_l1+A_m2+A_s1)/750)*100 $$
+Al_2: $$(A_l2+A_m2+A_s2)/900)*100 $$
+Al_3: $$(A_l3+T+m3+A_s3)/450)*100 $$
+
